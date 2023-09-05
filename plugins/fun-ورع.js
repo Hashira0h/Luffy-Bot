@@ -1,8 +1,8 @@
 let handler = async (m, { conn, command, text, usedPrefix, participants }) => {
-    if (!text) throw "*منشن الشخص الذي تريد معرفة نسبة ورعنته*"
+    if (!text) throw "منشن الشخص الذي تريد معرفة شخصيته"
     const mentionedUser = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : args[2] ? (args[2].replace(/[@ .+-]/g, '') + '@s.whatsapp.net') : ''
- const perecentage = [
- "1%",
+ const userChar = [
+     "1%",
  "2%",
  "3%",
  "4%",
@@ -104,14 +104,14 @@ let handler = async (m, { conn, command, text, usedPrefix, participants }) => {
  "100%",
     ]
     const userCharacterSeletion =
-      userChar[Math.floor(Math.random() * perecentage.length)]
+      userChar[Math.floor(Math.random() * userChar.length)]
 
-    let message = `*@${mentionedUser.split("@")[0]} انــه ورع بـنـسبة ${perecentage}*`
+    let message = `*@${mentionedUser.split("@")[0]} انــه ورع بـنـسـبــة ${userCharacterSeletion}*`
     
     conn.sendMessage(m.chat, { text: message, mentions: [mentionedUser] }, { quoted: m })
     
 }
-handler.help = ["ورع @tag"]
+handler.help = ["character @tag"]
 handler.tags = ['fun']
 handler.command = /^(ورع)/i
 
