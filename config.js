@@ -8,7 +8,7 @@ import axios from 'axios'
 
 global.owner = [
   ['967714075210', 'نــــاغـي سـان', true],
-  ['967714075210', 'LUFFY BOT', true], 
+  ['967714075210', '𓆩𝙻𝚄𝙵𝙵𝚈┇🤖┇𝙱𝙾𝚃𓆪', true], 
   [''] 
 ] //Number of owners
 
@@ -47,9 +47,9 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.botname = 'LUFFY'
+global.botname = '𓆩𝙻𝚄𝙵𝙵𝚈┇🤖┇𝙱𝙾𝚃𓆪'
 global.premium = 'true'
-global.packname = 'LUFFY BOT' 
+global.packname = '𓆩𝙻𝚄𝙵𝙵𝚈┇🤖┇𝙱𝙾𝚃𓆪' 
 global.author = 'صلي ؏ النبي' 
 global.igfg = 'Follow on Instagram\nhttps://instagram.com/mohamedmostafa4769?igshid=ZGUzMzM3NWJiOQ==\n' 
 global.dygp = 'https://chat.whatsapp.com/JcWLIylfbI5I0wazsJ7xEB'
